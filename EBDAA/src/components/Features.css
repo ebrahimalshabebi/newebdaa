@@ -1,0 +1,110 @@
+.features {
+  background-size: cover;
+  background-position: center;
+  padding: 60px 10px;
+}
+
+.features-container {
+  max-width: 1200px;
+  margin: auto;
+}
+
+.features-title {
+  padding-right: 140px;
+  text-align: right;
+  font-size: 29px;
+  font-weight: bold;
+  color: #c62828; /* red */
+  margin-bottom: 40px;
+}
+
+.features-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 13px;
+  flex-wrap: wrap;
+}
+
+.feature-box {
+  background: rgba(9, 9, 9, 0.7);
+  color: #fff;
+  flex: 1;
+  min-width: 250px;
+  max-width: 280px;
+  padding: 30px 20px;
+  border-radius: 12px;
+  text-align: center;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+  transition: transform 0.3s ease;
+}
+.feature-box:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+}
+
+.shift-up {
+  margin-top: -50px; /* adjust this value for how high you want them */
+  margin-bottom: 40px;
+}
+
+.feature-icon {
+  width: 100px;
+  height: auto;
+  margin-bottom: 15px;
+  filter: brightness(0) invert(1);
+}
+
+.feature-box h3 {
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 15px;
+}
+
+.feature-box p {
+  font-size: 14px;
+  line-height: 1.8;
+  color: #f1f1f1;
+}
+
+.stats-container {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 100px; /* spacing between columns */
+  margin: 40px 0;
+  direction: rtl; /* since your text is Arabic */
+}
+
+.stat-box {
+  text-align: center;
+}
+
+.stat-box h3 {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 15px;
+  color: #333;
+}
+
+.stat-box h3 span {
+  color: #444;
+}
+
+.stat-box h3::before {
+  content: "";
+}
+
+.stat-box h3 {
+  color: #b63d2b; /* red for +1 */
+}
+
+.stat-box span {
+  color: #333; /* black for text */
+}
+
+.stat-icon {
+  width: 80px;
+  height: auto;
+  margin-top: 10px;
+}

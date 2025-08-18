@@ -1,0 +1,23 @@
+import React from "react";
+import "./MainPage.css";
+
+const MainPage = () => {
+  return (
+    <div className="hero-section" id="home">
+      <div className="hero-content">
+        <h1>إبداع ميدا ميديا  للدعاية والاعلان</h1>
+        <img src="new-05.png" alt="Brand Logo" className="hero-logo" />
+        <p>
+          تعد الدعاية والاعلان من أهم الأدوات
+          التي تساهم في نجاح الشركات
+          والمؤسسات التجارية. يُعَدّ الترويج
+          للمنتجات والخدمات وبناء الوعي
+          بالعلامة التجارية جزءًا لا يتجزأ من
+          عملية النمو والازدهار.
+        </p>
+      </div>
+    </div>
+  );
+};
+
+export default MainPage;
