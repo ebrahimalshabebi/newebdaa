@@ -1,6 +1,15 @@
+/* Load custom font from src/assets */
 @font-face {
   font-family: "ZH-Zak";
-  src: url("./assets/ZH-Zak.ttf") format("truetype");
+  src: url("./assets/ZH-Zak.otf") format("truetype");
   font-weight: normal;
   font-style: normal;
+}
+
+/* Apply globally */
+body, * {
+  font-family: "ZH-Zak", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }

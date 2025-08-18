@@ -1,0 +1,63 @@
+.who-we-are-section {
+  width: 100%;
+  min-height: 800px;  /* big section */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #b9b9b9; /* background color */
+  padding: 60px 20px;
+}
+
+.who-we-are-card {
+  display: flex;
+  width: 90%;             /* wider card */
+  height: 60%;            /* taller to take more vertical space */
+  background-color: white;
+  box-shadow: 0 16px 40px rgba(0,0,0,0.25); /* strong shadow */
+  border-radius: 54px;    /* very rounded corners */
+  overflow: hidden;
+  flex-direction: row-reverse; /* image left, text right */
+}
+
+.who-we-are-text {
+  flex: 1;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center; /* vertical centering */
+  text-align: right;       /* Arabic alignment */
+}
+
+.green-title {
+  color: green;
+  font-size: 64px;        /* large title */
+  margin-bottom: 20px;
+}
+
+.black-title {
+  color: black;
+  font-size: 40px;        /* large subtitle */
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.black-paragraph {
+  color: black;
+  font-size: 22px;        /* large paragraph text */
+  line-height: 1.8;
+}
+
+.who-we-are-image {
+  flex: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.who-we-are-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;      /* image fills container nicely */
+  border-radius: 0 54px 54px 0; /* optional: round image corners to match card */
+}

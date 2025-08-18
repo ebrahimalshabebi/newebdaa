@@ -1,44 +1,71 @@
+/* Reset default margin */
 body {
-  background: url("vecteezy_the-sky-is-blue-and-cloudy_44592778.jpg") no-repeat center;
-  background-size: cover; /* fills but crops */
-  height: 645px;
+  margin: 0;
+  min-height: 100vh;
+  font-family: sans-serif;
 }
 
-
+/* Hero section */
 .hero-section {
-  width: 50%;
-  height: 480px;
-  background: url("MainPage.png") no-repeat center;
-  background-size: cover;
+  position: relative;
   display: flex;
-  align-items: center;    /* vertical center */
-  justify-content: flex-start;  /* 👈 push content to the left */
-  position: relative;
-  color: white;
-  text-align: right;      /* 👈 keep text RTL */
-  padding: 2rem;          /* some spacing from edges */
-  direction: rtl;         /* 👈 enforce RTL flow */
-}
-.hero-content {
-  position: relative;
-  z-index: 1;
-  max-width: 800px;
-  text-align: right; /* ensures RTL alignment */
+  justify-content: space-between;
+  align-items: center; /* text starts top */
+  min-height: 530px;
+  padding: 40px;
+  direction: rtl;
+  color: #383838;
+
+  background: url("vecteezy_the-sky-is-blue-and-cloudy_44592778.jpg") no-repeat center;
+  background-size: cover;
+  overflow: hidden; /* hides overflow of the image if needed */
 }
 
-.hero-content h1 {
-  font-size: 2.2rem;
-  margin-bottom: 1rem;
+/* Overlay for contrast */
+.hero-section .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,0.1);
+  z-index: 1;
+}
+
+/* Left side text */
+.hero-text {
+  position: relative;
+  z-index: 2;
+  flex: 1;
+  max-width: 50%;
+  text-align: right;
+  padding-top: 20px; /* spacing from top */
+}
+
+.hero-text h1 {
+  font-size: 56px;
+  font-weight: bold;
+  margin-bottom: 15px;
 }
 
 .hero-logo {
-  max-width: 150px;
-  margin: 1rem 0;
+  max-width: 400px;
+  margin: 15px 0;
 }
 
-.hero-content p {
-  font-size: 1.1rem;
+.hero-text p {
+  font-size: 38px;
   line-height: 1.6;
-  white-space: pre-line;
+}
+
+/* Right side image: bottom-right */
+.hero-image {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  max-width: 900px;
+  height: auto;
+  z-index: 2;
 }
 

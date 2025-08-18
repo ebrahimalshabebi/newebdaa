@@ -4,7 +4,11 @@ import "./MainPage.css";
 const MainPage = () => {
   return (
     <div className="hero-section" id="home">
-      <div className="hero-content">
+      {/* Overlay for contrast */}
+      <div className="overlay"></div>
+
+      {/* Left side: text */}
+      <div className="hero-text">
         <h1>إبداع ميدا ميديا  للدعاية والاعلان</h1>
         <img src="new-05.png" alt="Brand Logo" className="hero-logo" />
         <p>
@@ -16,6 +20,9 @@ const MainPage = () => {
           عملية النمو والازدهار.
         </p>
       </div>
+
+      {/* Right side: building image */}
+      <img src="MainPage.png" alt="Building" className="hero-image" />
     </div>
   );
 };
