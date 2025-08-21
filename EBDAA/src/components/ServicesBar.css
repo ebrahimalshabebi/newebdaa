@@ -65,8 +65,9 @@
 }
 
 .background {
-  background-image: url("homePage.png");
+  background-color: #b9b9b9; /* Solid grey background */
   height: 80px;
   width: 100%;
   z-index: 5;
 }
+

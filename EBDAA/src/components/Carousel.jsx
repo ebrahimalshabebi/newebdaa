@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import MainPage from "./MainPage";
-import Marketing from "./MarketingServices";
-import Printing from "./PrintingServices";
+import Marketing from "./Marketing";
+import Printing from "./Printing";
 import "./Carousel.css";
 
 const Carousel = () => {

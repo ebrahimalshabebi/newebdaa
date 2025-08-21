@@ -2,18 +2,19 @@
 .carousel-container {
   position: relative;
   width: 100%;
-  height: 530px; /* Fixed height based on your components */
+  height: 670px; /* 580px + 90px extra space */
   overflow: hidden;
-  margin-bottom: 40px; /* Grey space below carousel */
+  background-color: #b9b9b9;
+  margin-bottom: 0; /* no extra white margin needed */
 }
 
-/* Track that holds all slides */
+
 .carousel-track {
   display: flex;
   width: 100%;
-  height: 100%;
-  transition: transform 0.5s ease-in-out; /* Smooth sliding animation */
+  height: 580px; /* slide height stays the same */
 }
+
 
 /* Individual slide */
 .carousel-slide {
@@ -77,15 +78,4 @@
 
 .carousel-indicator:hover {
   background-color: rgba(255, 255, 255, 0.8);
-}
-
-/* Grey space below carousel */
-.carousel-container::after {
-  content: '';
-  position: absolute;
-  bottom: -40px;
-  left: 0;
-  width: 100%;
-  height: 40px;
-  background-color: #f0f0f0;
 }
