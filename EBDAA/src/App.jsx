@@ -9,6 +9,7 @@ import Footer from "./components/Footer";
 import Features from "./components/Features";
 import WhoWeAre from "./components/WhoWeAre";
 import Carousel from "./components/Carousel";
+import MarketingServicesGrid from './components/MarketingServicesGrid';
 
 export default function App() {
   return (
@@ -17,6 +18,7 @@ export default function App() {
       <Carousel />
       <Services />
       <WhoWeAre />
+      <MarketingServicesGrid />
       <Features />
       <Footer />
       

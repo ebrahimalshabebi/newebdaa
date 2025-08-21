@@ -55,7 +55,7 @@ const Features = () => {
         </div>
       </div>
     </section>
-    <div style={{ background: "#f5f5f5",
+    <div style={{ background: "#b9b9b9",
         height: "100px",
         width: "100%",
        }}>
@@ -63,26 +63,26 @@ const Features = () => {
     <div className="stats-container">
       <div className="stat-box">
         <h3>
-          +1 <span>عملائنا</span>
+           <span>عملائنا</span> +1
         </h3>
         <img src="customers.png" alt="عملائنا" className="stat-icon" />
       </div>
 
       <div className="stat-box">
         <h3>
-          +1 <span>مشروعات</span>
+           <span>مشروعات</span> +1
         </h3>
         <img src="projects.png" alt="مشروعات" className="stat-icon" />
       </div>
 
       <div className="stat-box">
         <h3>
-          +1 <span>عملاء نشطون</span>
+           <span>عملاء نشطون</span> +1
         </h3>
         <img src="goodCustomers.png" alt="عملاء نشطون" className="stat-icon" />
       </div>
     </div>
-    <div style={{ background: "#f5f5f5",
+    <div style={{ background: "#b9b9b9",
         height: "100px",
         width: "100%",
        }}>

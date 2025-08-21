@@ -26,7 +26,7 @@
 }
 
 .feature-box {
-  background: rgba(9, 9, 9, 0.7);
+  background: #827470;
   color: #fff;
   flex: 1;
   min-width: 250px;
@@ -51,7 +51,6 @@
   width: 100px;
   height: auto;
   margin-bottom: 15px;
-  filter: brightness(0) invert(1);
 }
 
 .feature-box h3 {
@@ -71,9 +70,11 @@
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  gap: 100px; /* spacing between columns */
-  margin: 40px 0;
-  direction: rtl; /* since your text is Arabic */
+  gap: 100px;
+  padding : 40px 0;
+  direction: rtl; 
+  background-color: #a7a6a6;
+  outline: rgba(77, 77, 77, 0.3) solid 5px;
 }
 
 .stat-box {
@@ -81,7 +82,7 @@
 }
 
 .stat-box h3 {
-  font-size: 24px;
+  font-size: 30px;
   font-weight: bold;
   margin-bottom: 15px;
   color: #333;
@@ -96,15 +97,15 @@
 }
 
 .stat-box h3 {
-  color: #b63d2b; /* red for +1 */
+  color: #b63d2b;
 }
 
 .stat-box span {
-  color: #333; /* black for text */
+  color: #333; 
 }
 
 .stat-icon {
-  width: 80px;
+  width: 100px;
   height: auto;
   margin-top: 10px;
 }
