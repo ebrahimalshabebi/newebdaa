@@ -1,0 +1,91 @@
+/* Carousel container */
+.carousel-container {
+  position: relative;
+  width: 100%;
+  height: 530px; /* Fixed height based on your components */
+  overflow: hidden;
+  margin-bottom: 40px; /* Grey space below carousel */
+}
+
+/* Track that holds all slides */
+.carousel-track {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.5s ease-in-out; /* Smooth sliding animation */
+}
+
+/* Individual slide */
+.carousel-slide {
+  min-width: 100%;
+  height: 100%;
+}
+
+/* Navigation buttons */
+.carousel-button {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  font-size: 24px;
+  cursor: pointer;
+  z-index: 10;
+  transition: background-color 0.3s;
+}
+
+.carousel-button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
+.carousel-button-prev {
+  left: 20px;
+}
+
+.carousel-button-next {
+  right: 20px;
+}
+
+/* Indicators */
+.carousel-indicators {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  gap: 10px;
+  z-index: 10;
+}
+
+.carousel-indicator {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  background-color: rgba(255, 255, 255, 0.5);
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.carousel-indicator.active {
+  background-color: white;
+}
+
+.carousel-indicator:hover {
+  background-color: rgba(255, 255, 255, 0.8);
+}
+
+/* Grey space below carousel */
+.carousel-container::after {
+  content: '';
+  position: absolute;
+  bottom: -40px;
+  left: 0;
+  width: 100%;
+  height: 40px;
+  background-color: #f0f0f0;
+}
