@@ -29,7 +29,7 @@ export default function Services() {
       {services.map((service, idx) => (
         <div key={idx} className="service-item">
           <span className="icon-circle">
-            <img src={"/checkmark.png"} alt="check" />
+            <img src={"checkmark.png"} alt="check" />
           </span>
 
 

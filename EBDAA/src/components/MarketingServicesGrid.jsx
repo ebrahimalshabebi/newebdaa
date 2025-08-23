@@ -53,7 +53,7 @@ const MarketingServicesGrid = () => {
   ];
 
   return (
-    <div className="marketing-services-container">
+    <div className="marketing-services-container" id="services">
       <div className="services-header">
         <h2>خدمات تسويقية وإعلانية متكاملة</h2>
         {/* Green dotted line added here */}

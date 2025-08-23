@@ -2,21 +2,20 @@
 .carousel-container {
   position: relative;
   width: 100%;
-  height: 670px; /* 580px + 90px extra space */
+  height: 670px; 
   overflow: hidden;
   background-color: #b9b9b9;
-  margin-bottom: 0; /* no extra white margin needed */
+  margin-bottom: 0;
 }
 
 
 .carousel-track {
   display: flex;
   width: 100%;
-  height: 580px; /* slide height stays the same */
+  height: 580px; 
 }
 
 
-/* Individual slide */
 .carousel-slide {
   min-width: 100%;
   height: 100%;
@@ -26,21 +25,12 @@
 .carousel-button {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
-  background-color: rgba(0, 0, 0, 0.5);
-  color: white;
-  border: none;
-  border-radius: 50%;
-  width: 40px;
-  height: 40px;
-  font-size: 24px;
+  transform: translateY(-50%); /* keep vertically centered */
+  background: none;   /* remove white circle */
+  border: none;       /* remove border */
+  padding: 0;         /* remove padding */
   cursor: pointer;
   z-index: 10;
-  transition: background-color 0.3s;
-}
-
-.carousel-button:hover {
-  background-color: rgba(0, 0, 0, 0.8);
 }
 
 .carousel-button-prev {
@@ -51,20 +41,32 @@
   right: 20px;
 }
 
+/* Arrow image styling */
+.arrow-img {
+  width: 85px;   /* adjust size */
+  height: 85px;
+  object-fit: contain;
+  pointer-events: none; /* clicks go to button */
+}
+
+.prev-arrow {
+  transform: rotate(180deg);
+}
+
 /* Indicators */
 .carousel-indicators {
   position: absolute;
-  bottom: 20px;
+  bottom: 50px; /* move indicators higher */
   left: 50%;
   transform: translateX(-50%);
   display: flex;
-  gap: 10px;
+  gap: 12px; /* bigger spacing */
   z-index: 10;
 }
 
 .carousel-indicator {
-  width: 12px;
-  height: 12px;
+  width: 16px;  /* bigger dots */
+  height: 16px;
   border-radius: 50%;
   border: none;
   background-color: rgba(255, 255, 255, 0.5);
@@ -79,3 +81,4 @@
 .carousel-indicator:hover {
   background-color: rgba(255, 255, 255, 0.8);
 }
+

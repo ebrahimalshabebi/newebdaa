@@ -1,6 +1,6 @@
 .who-we-are-section {
   width: 100%;
-  min-height: 800px;  /* big section */
+  min-height: 900px;  /* big section */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -36,8 +36,7 @@
 
 .black-title {
   color: black;
-  font-size: 40px;        /* large subtitle */
-  font-weight: bold;
+  font-size: 32px;        /* large subtitle */
   margin-bottom: 20px;
 }
 

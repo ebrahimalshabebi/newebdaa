@@ -12,7 +12,7 @@
 .features-title {
   padding-right: 140px;
   text-align: right;
-  font-size: 29px;
+  font-size: 40px;
   font-weight: bold;
   color: #c62828; /* red */
   margin-bottom: 40px;
@@ -20,8 +20,7 @@
 
 .features-row {
   display: flex;
-  justify-content: space-between;
-  gap: 13px;
+  gap: 70px;
   flex-wrap: wrap;
 }
 
@@ -29,12 +28,14 @@
   background: #827470;
   color: #fff;
   flex: 1;
-  min-width: 250px;
-  max-width: 280px;
-  padding: 30px 20px;
-  border-radius: 12px;
+  min-width: 200px;
+  max-width: 210px;
+  border-radius: 45px;
+  height: auto;
+  border: 2px solid rgb(0, 0, 0); /* Thicker border */
+  padding: 10px 7px; /* More horizontal padding */
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3);
   text-align: center;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
   transition: transform 0.3s ease;
 }
 .feature-box:hover {
@@ -43,26 +44,25 @@
 }
 
 .shift-up {
-  margin-top: -50px; /* adjust this value for how high you want them */
-  margin-bottom: 40px;
+  margin-top: -90px; /* adjust this value for how high you want them */
+  margin-bottom: 90px;
 }
 
 .feature-icon {
   width: 100px;
   height: auto;
-  margin-bottom: 15px;
 }
 
 .feature-box h3 {
-  font-size: 18px;
+  font-size: 22px;
   font-weight: bold;
   color: white;
   margin-bottom: 15px;
 }
 
 .feature-box p {
-  font-size: 14px;
-  line-height: 1.8;
+  font-size: 20px;
+  line-height: 1.2;
   color: #f1f1f1;
 }
 

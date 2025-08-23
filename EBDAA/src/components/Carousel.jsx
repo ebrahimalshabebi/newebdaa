@@ -36,12 +36,13 @@ const Carousel = () => {
       </div>
       
       <button className="carousel-button carousel-button-prev" onClick={goToPrev}>
-        &#8249;
+        <img src="arrow.png" alt="Previous" className="arrow-img prev-arrow" />
       </button>
+
       <button className="carousel-button carousel-button-next" onClick={goToNext}>
-        &#8250;
+        <img src="arrow.png" alt="Next" className="arrow-img next-arrow" />
       </button>
-      
+
       <div className="carousel-indicators">
         {components.map((_, index) => (
           <button

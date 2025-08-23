@@ -3,7 +3,7 @@ import "./Footer.css";
 
 const Footer = () => {
   return (
-    <footer className="footer">
+    <footer className="footer" id="contact">
       <div className="footer-container">
         <div className="footer-section logo">
           <img src="logoSide-06.png" alt="Ebdaa Media" className="logo-img" />
@@ -13,10 +13,10 @@ const Footer = () => {
         <div className="footer-section social">
           <h3>تابعنا على ...</h3>
           <div className="social-icons">
-            <a href="https://www.facebook.com" target="_blank" rel="noreferrer">
+            <a href="https://www.facebook.com/share/16S8oEcweL/?mibextid=wwXIfr" target="_blank" rel="noreferrer">
               <img src="facebook.png" alt="Facebook" />
             </a>
-            <a href="https://www.instagram.com" target="_blank" rel="noreferrer">
+            <a href="https://www.instagram.com/ebdaamedia2025/"  target="_blank" rel="noreferrer">
               <img src="instagram.png" alt="Instagram" />
             </a>
           </div>
@@ -29,10 +29,15 @@ const Footer = () => {
             <img src="phone.png" alt="Phone" />
             <span>02-366900</span>
           </div>
-          <div className="footer-item">
+          <a 
+            href="https://wa.me/+967777730311" 
+            target="_blank" 
+            rel="noopener noreferrer" 
+            className="footer-item"
+          >
             <img src="whatsapp.png" alt="WhatsApp" />
             <span>777730311</span>
-          </div>
+          </a>
           <div className="footer-item">
             <img src="mail.png" alt="Email" />
             <span>info@ebdaa-media.com</span>
