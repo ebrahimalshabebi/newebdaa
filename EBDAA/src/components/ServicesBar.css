@@ -71,3 +71,70 @@
   z-index: 5;
 }
 
+/* iPad responsive styles (768px - 1024px) */
+@media (max-width: 1024px) {
+  .services-container {
+    max-width: 90%;
+    padding: 15px;
+    padding-right: 80px;
+    border-radius: 70px;
+    margin-top: -15px;
+  }
+  
+  .service-item {
+    gap: 12px;
+  }
+  
+  .icon-circle {
+    width: 40px;
+    height: 40px;
+  }
+  
+  .icon-circle img {
+    width: 80px;
+    height: 80px;
+  }
+  
+  .service-text h3 {
+    font-size: 18px;
+  }
+  
+  .service-text p {
+    font-size: 14px;
+  }
+  
+  .background {
+    height: 70px;
+  }
+}
+
+/* Mobile responsive styles (up to 767px) */
+@media (max-width: 767px) {
+  .services-container {
+    padding: 8px;
+    padding-right: 30px;
+    border-radius: 30px;
+  }
+  
+  .icon-circle {
+    width: 35px;
+    height: 25px;
+  }
+  
+  .icon-circle img {
+    width: 50px;
+    height: 50px;
+  }
+  
+  .service-text h3 {
+    font-size: 8px;
+  }
+  
+  .service-text p {
+    font-size: 7px;
+  }
+  
+  .background {
+    height: 45px;
+  }
+}

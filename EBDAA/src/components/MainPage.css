@@ -76,3 +76,67 @@ body {
   z-index: 2;
 }
 
+/* iPad responsive styles (768px - 1024px) */
+@media (max-width: 1024px) {
+  .hero-section {
+    min-height: 400px;
+    padding: 60px;
+  }
+  
+  .hero-text {
+    max-width: 45%;
+    padding-top: 10px;
+  }
+  
+  .hero-text h1 {
+    font-size: 32px;
+  }
+  
+  .hero-logo {
+    max-width: 350px;
+  }
+  
+  .hero-text p {
+    font-size: 22px;
+    margin-inline-start: 30px;
+  }
+  
+  .hero-image {
+    max-width: 550px;
+    left: -30px;
+  }
+}
+
+/* Mobile responsive styles (up to 767px) */
+@media (max-width: 767px) {
+  .hero-section {
+    min-height: 350px;
+    padding: 30px 40px;
+  }
+  
+  .hero-text {
+    max-width: 80%;
+    padding-top: 5px;
+  }
+  
+  .hero-text h1 {
+    font-size: 22px;
+    margin-bottom: 8px;
+  }
+  
+  .hero-logo {
+    max-width: 200px;
+    margin: 8px 0;
+  }
+  
+  .hero-text p {
+    font-size: 14px;
+    line-height: 1.3;
+    margin-inline-start: 15px;
+  }
+  
+  .hero-image {
+    max-width: 300px;
+    left: -40px;
+  }
+}

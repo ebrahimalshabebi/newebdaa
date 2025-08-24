@@ -36,3 +36,39 @@
   font-size: 39px;
   margin-top: 15px;
 }
+
+/* iPad responsive styles (768px - 1024px) */
+@media (max-width: 1024px) {
+  .hero1 {
+    height: 500px;
+  }
+  
+  .hero1 h1 {
+    font-size: 36px;
+  }
+  
+  .hero1 p {
+    font-size: 30px;
+    margin-top: 12px;
+  }
+}
+
+/* Mobile responsive styles (up to 767px) */
+@media (max-width: 767px) {
+  .hero1 {
+    height: 400px;
+  }
+  
+  .hero1 h1 {
+    font-size: 28px;
+  }
+  
+  .hero1 p {
+    font-size: 22px;
+    margin-top: 10px;
+  }
+  
+  .hero-content1 {
+    padding: 0 15px;
+  }
+}

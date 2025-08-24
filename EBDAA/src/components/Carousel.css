@@ -82,3 +82,60 @@
   background-color: rgba(255, 255, 255, 0.8);
 }
 
+/* iPad responsive styles (768px - 1024px) */
+@media (max-width: 1024px) {
+  .carousel-container {
+    height: 500px;
+  }
+  
+  .carousel-track {
+    height: 420px;
+  }
+  
+  .arrow-img {
+    width: 65px;
+    height: 65px;
+  }
+  
+  .carousel-indicators {
+    bottom: 40px;
+  }
+  
+  .carousel-indicator {
+    width: 14px;
+    height: 14px;
+  }
+}
+
+/* Mobile responsive styles (up to 767px) */
+@media (max-width: 767px) {
+  .carousel-container {
+    height: 350px;
+  }
+  
+  .carousel-track {
+    height: 300px;
+  }
+  
+  .arrow-img {
+    width: 45px;
+    height: 45px;
+  }
+  
+  .carousel-button-prev {
+    left: 10px;
+  }
+  
+  .carousel-button-next {
+    right: 10px;
+  }
+  
+  .carousel-indicators {
+    bottom: 25px;
+  }
+  
+  .carousel-indicator {
+    width: 12px;
+    height: 12px;
+  }
+}

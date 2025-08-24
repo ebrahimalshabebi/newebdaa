@@ -64,3 +64,102 @@
   height: auto;
   margin-bottom: 10px;
 }
+
+/* iPad responsive styles (1024px) */
+@media (max-width: 1155px) {
+  .footer {
+    padding: 30px 15px;
+  }
+  
+  .footer-container {
+    gap: 80px;
+    justify-content: space-around;
+  }
+  
+  .footer-section {
+    min-width: 200px;
+    margin-bottom: 20px;
+  }
+  
+  .social-icons {
+    gap: 30px;
+    margin: 20px 0;
+  }
+  
+  .social-icons img {
+    width: 35px;
+    height: 35px;
+  }
+  
+  .logo-img {
+    width: 240px;
+  }
+}
+
+/* Mobile responsive styles (767px) */
+@media (max-width: 880px) {
+  .footer {
+    padding: 25px 15px;
+    text-align: center;
+  }
+  
+  .footer-container {
+    flex-direction: column;
+    gap: 40px;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .footer-section {
+    min-width: 100%;
+    text-align: center;
+    margin-bottom: 15px;
+  }
+  
+  .footer-item {
+    justify-content: center;
+  }
+  
+  .social-icons {
+    justify-content: center;
+    gap: 25px;
+    margin: 15px 0;
+  }
+  
+  .social-icons img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .logo-img {
+    width: 200px;
+  }
+}
+
+/* Small mobile devices (up to 480px) */
+@media (max-width: 500px) {
+  .footer {
+    padding: 20px 10px;
+  }
+  
+  .footer-container {
+    gap: 30px;
+  }
+  
+  .footer-section h3 {
+    font-size: 16px;
+  }
+  
+  .social-icons {
+    gap: 20px;
+  }
+  
+  .social-icons img {
+    width: 25px;
+    height: 25px;
+  }
+  
+  .logo-img {
+    width: 180px;
+  }
+}
