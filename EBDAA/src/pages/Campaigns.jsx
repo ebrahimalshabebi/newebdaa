@@ -33,17 +33,17 @@ const Campaigns = ({ setPage }) => {
         <div className="campaigns-row">
           <div className="campaigns-image-wrapper">
             <div className="campaigns-bg-square"></div>
-            <img src="1.png" alt="Campaign 1" className="campaigns-image" />
+            <img src="2.png" alt="Campaign 1" className="campaigns-image" />
           </div>
           <div className="campaigns-image-wrapper">
             <div className="campaigns-bg-square"></div>
-            <img src="3.png" alt="Campaign 2" className="campaigns-image" />
+            <img src="1.png" alt="Campaign 2" className="campaigns-image" />
           </div>
         </div>
         <div className="campaigns-row single">
           <div className="campaigns-image-wrapper">
             <div className="campaigns-bg-square"></div>
-            <img src="2.png" alt="Campaign 3" className="campaigns-image large" />
+            <img src="3.png" alt="Campaign 3" className="campaigns-image large" />
           </div>
         </div>
       </div>

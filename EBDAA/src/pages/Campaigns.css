@@ -76,7 +76,7 @@
 .campaigns-row {
   display: flex;
   justify-content: center;
-  gap: 40px;
+  gap: 200px;
 }
 
 .campaigns-row.single {
@@ -89,14 +89,27 @@
   display: inline-block;
 }
 
-.campaigns-bg-square {
+/* Default small square (for first two images) */
+.campaigns-row:not(.single) .campaigns-bg-square {
   position: absolute;
-  top: 20px;   /* offset so the image looks "in front" */
-  left: 20px;
-  width: 100%;
-  height: 100%;
-  background-color: #089b78; /* dark green */
-  border-radius: 12px;
+  top: 150px;   /* more offset so image looks above */
+  right: 40px;
+  width: 90%;   /* smaller than image */
+  height: 65%;
+  background-color: #089b78; 
+  border-radius: 2px;
+  z-index: 0;
+}
+
+/* Larger square for the single bottom image */
+.campaigns-row.single .campaigns-bg-square {
+  position: absolute;
+  top: 80px;
+  left: -30px;
+  width:110%;   /* wider than image */
+  height: 70%;
+  background-color: #089b78;
+  border-radius: 2px;
   z-index: 0;
 }
 
@@ -104,15 +117,14 @@
   position: relative;
   z-index: 1;
   width: 500px;
-  height: 400px;
+  height: 600px;
   object-fit: cover;
-  border-radius: 12px;
-  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  border-radius: 2px;
 }
 
 .campaigns-image.large {
-  width: 700px;
-  height: 500px;
+  width: 500px;
+  height: auto;
 }
 
 
