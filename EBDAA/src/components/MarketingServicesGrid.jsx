@@ -1,7 +1,7 @@
 import React from "react";
 import "./MarketingServicesGrid.css";
 
-const MarketingServicesGrid = () => {
+const MarketingServicesGrid = ({ setPage }) => {
   const services = [
     {
       image: "asc.png",
@@ -13,7 +13,8 @@ const MarketingServicesGrid = () => {
             العلامة التجارية ويعزز حضورها
             في أذهان الجمهور`,
       buttonText: "إعرف أكثر",
-      position: "up"
+      position: "up",
+      page: "visualIdentity"
     },
     {
       image: "DigitalAdDesign-08.png",
@@ -25,7 +26,8 @@ const MarketingServicesGrid = () => {
         الرسالي لضمان تحقيق أفضل
         تفاعل مع الجمهور المستهدف`,
       buttonText: "إعرف أكثر",
-      position: "down"
+      position: "down",
+      page: "digitalAds"
     },
     {
       image: "asx.png",
@@ -37,7 +39,8 @@ const MarketingServicesGrid = () => {
         أقصى تأثير ممكن ضمن
         الأهداف المحددة`,
       buttonText: "إعرف أكثر",
-      position: "up"
+      position: "up",
+      page: "campaigns"
     },
     {
       image: "514568-PIMP17-162-01.png",
@@ -48,7 +51,8 @@ const MarketingServicesGrid = () => {
         اهتمامهم. نحن
         من نصنعها!`,
       buttonText: "إعرف أكثر",
-      position: "down"
+      position: "down",
+      page: "contentCreation"
     }
   ];
 
@@ -56,7 +60,6 @@ const MarketingServicesGrid = () => {
     <div className="marketing-services-container" id="services">
       <div className="services-header">
         <h2>خدمات تسويقية وإعلانية متكاملة</h2>
-        {/* Green dotted line added here */}
         <div className="green-dotted-line-header">
           <div className="thick-green-line"></div>
           <div className="three-dots">
@@ -65,9 +68,11 @@ const MarketingServicesGrid = () => {
             <span className="dot"></span>
           </div>
         </div>
-        <p>نقدم العديد من خدمات التسويق والاعلان والخدمات التسويقية المختلفة مثل التصميم والخدمات الرقمية وخدمات المبيعات والتسويق الالكتروني</p>
+        <p>
+          نقدم العديد من خدمات التسويق والاعلان والخدمات التسويقية المختلفة
+        </p>
       </div>
-      
+
       <div className="services-grid">
         {services.map((service, index) => (
           <div key={index} className={`service-card ${service.position}`}>
@@ -76,7 +81,15 @@ const MarketingServicesGrid = () => {
             </div>
             <h3>{service.title}</h3>
             <p>{service.description}</p>
-            <button className="service-button">{service.buttonText}</button>
+            <button
+              className="service-button"
+              onClick={() => {
+                setPage(service.page);
+                window.scrollTo({ top: 0, behavior: "smooth" }); // scroll smoothly to top
+              }}
+            >
+              {service.buttonText}
+            </button>
           </div>
         ))}
       </div>

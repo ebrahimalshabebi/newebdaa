@@ -1,0 +1,144 @@
+.campaigns-page {
+  direction: rtl;
+  text-align: right;
+  background-color: #f5f5f5;
+}
+
+/* Top full image */
+.campaigns-top-image-container {
+  position: relative;
+  width: 100%;
+  height: 50vh;
+  overflow: hidden;
+}
+
+.campaigns-top-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.campaigns-top-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 4rem;
+  font-weight: bold;
+  text-align: center;
+  text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.6);
+}
+
+/* Header with line */
+.campaigns-header-line {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-top: 80px;
+  color: #089b78;
+}
+
+.campaigns-header-line .campaigns-line {
+  width: 200px;
+  height: 3px;
+  background-color: #089b78;
+}
+
+.campaigns-header-line h1 {
+  margin: 0;
+  font-size: 3.2rem;
+  font-weight: bold;
+}
+
+/* Description */
+.campaigns-description {
+  margin: 50px 100px 40px 20px;
+  font-size: 2.3rem;
+  line-height: 2;
+  color: #333;
+  max-width: 1400px;
+}
+
+/* Image section */
+.campaigns-image-section {
+  padding: 60px 40px;
+  margin: 100px;
+}
+
+.campaigns-image-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+
+.campaigns-row {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+.campaigns-row.single {
+  justify-content: center;
+}
+
+/* Wrapper for image + green square */
+.campaigns-image-wrapper {
+  position: relative;
+  display: inline-block;
+}
+
+.campaigns-bg-square {
+  position: absolute;
+  top: 20px;   /* offset so the image looks "in front" */
+  left: 20px;
+  width: 100%;
+  height: 100%;
+  background-color: #089b78; /* dark green */
+  border-radius: 12px;
+  z-index: 0;
+}
+
+.campaigns-image {
+  position: relative;
+  z-index: 1;
+  width: 500px;
+  height: 400px;
+  object-fit: cover;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+}
+
+.campaigns-image.large {
+  width: 700px;
+  height: 500px;
+}
+
+
+/* Back button */
+.campaigns-back-button-container {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.campaigns-back-button {
+  padding: 10px 20px;
+  background-color: #089b78;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background 0.3s ease;
+}
+
+.campaigns-back-button:hover {
+  background-color: #02745a;
+}
+
+.campaigns-bline {
+  width: 100%;
+  height: 6px;
+  background-color: #089b78;
+}

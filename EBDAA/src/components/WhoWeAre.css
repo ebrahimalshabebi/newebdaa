@@ -1,148 +1,150 @@
+/* ===== Who We Are Section ===== */
 .who-we-are-section {
   width: 100%;
-  min-height: 900px;  /* big section */
+  min-height: 700px;  /* smaller section height */
   display: flex;
   justify-content: center;
   align-items: center;
   background-color: #b9b9b9; /* background color */
-  padding: 60px 20px;
+  padding: 40px 20px;
 }
 
 .who-we-are-card {
   display: flex;
-  width: 90%;             /* wider card */
-  height: 60%;            /* taller to take more vertical space */
+  width: 80%;              /* smaller card width */
   background-color: white;
-  box-shadow: 0 16px 40px rgba(0,0,0,0.25); /* strong shadow */
-  border-radius: 54px;    /* very rounded corners */
+  box-shadow: 0 12px 30px rgba(0,0,0,0.2); /* softer shadow */
+  border-radius: 30px;     /* slightly smaller radius */
   overflow: hidden;
   flex-direction: row-reverse; /* image left, text right */
 }
 
+/* ===== Text Area ===== */
 .who-we-are-text {
   flex: 1;
-  padding: 40px;
+  padding: 30px;
   display: flex;
   flex-direction: column;
-  justify-content: center; /* vertical centering */
-  text-align: right;       /* Arabic alignment */
+  justify-content: center;
+  text-align: right;  /* RTL for Arabic */
 }
 
 .green-title {
   color: green;
-  font-size: 64px;        /* large title */
-  margin-bottom: 20px;
+  font-size: 42px;       /* smaller */
+  margin-bottom: 15px;
 }
 
 .black-title {
   color: black;
-  font-size: 32px;        /* large subtitle */
-  margin-bottom: 20px;
+  font-size: 28px;       /* smaller */
+  margin-bottom: 15px;
 }
 
 .black-paragraph {
   color: black;
-  font-size: 23px;        /* large paragraph text */
-  line-height: 1.8;
+  font-size: 18px;       /* smaller */
+  line-height: 1.6;
 }
 
+/* ===== Image Area ===== */
 .who-we-are-image {
   flex: 1;
   display: flex;
   align-items: center;
   justify-content: center;
-  overflow: hidden;
+  border-radius: 30px;
+  overflow: hidden; /* keeps rounded corners */
 }
 
 .who-we-are-image img {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;      /* image fills container nicely */
-  border-radius: 0 54px 54px 0; /* optional: round image corners to match card */
+  width: 85%;           /* smaller image */
+  height: auto;
+  object-fit: cover;
+  border-radius: 90px;  /* all sides rounded */
+  display: block;
 }
 
-/* iPad responsive styles (1024px) */
+/* ===== iPad (1024px) ===== */
 @media (max-width: 1024px) {
   .who-we-are-section {
-    min-height: 700px;
-    padding: 40px 15px;
+    min-height: 600px;
+    padding: 30px 15px;
   }
-  
+
   .who-we-are-card {
-    width: 95%;
-    height: 55%;
+    width: 90%;
+    border-radius: 25px;
   }
-  
+
   .green-title {
-    font-size: 48px;
-    margin-bottom: 15px;
+    font-size: 34px;
   }
-  
+
   .black-title {
-    font-size: 26px;
-    margin-bottom: 15px;
+    font-size: 20px;
   }
-  
+
   .black-paragraph {
-    font-size: 19px;
-    line-height: 1.6;
+    font-size: 16px;
   }
-  
+
   .who-we-are-text {
-    padding: 30px;
+    padding: 20px;
+  }
+
+  .who-we-are-image img {
+    width: 80%;
+    border-radius: 25px;
   }
 }
 
-/* Mobile responsive styles (767px) */
+/* ===== Mobile (767px) ===== */
 @media (max-width: 767px) {
   .who-we-are-section {
     min-height: auto;
-    padding: 30px 10px;
+    padding: 20px 10px;
   }
-  
+
   .who-we-are-card {
-    width: 98%;
-    height: auto;
-    flex-direction: column; /* Stack vertically */
+    width: 95%;
+    flex-direction: column; /* stack */
+    border-radius: 20px;
   }
-  
+
   .green-title {
-    font-size: 32px;
-    margin-bottom: 12px;
-    text-align: right; /* RTL alignment */
+    font-size: 38px;
+    margin-bottom: 10px;
+    text-align: right;
   }
-  
+
   .black-title {
-    font-size: 20px;
-    margin-bottom: 12px;
-    text-align: right; /* RTL alignment */
+    font-size: 18px;
+    margin-bottom: 10px;
+    text-align: right;
   }
-  
+
   .black-paragraph {
-    font-size: 16px;
+    font-size: 14px;
     line-height: 1.5;
-    text-align: right; /* RTL alignment */
+    text-align: right;
   }
-  
+
   .who-we-are-text {
-    padding: 20px;
-    width: 100%; /* Full width */
-    box-sizing: border-box;
-    order: 2; /* Ensure text comes after image */
+    padding: 15px;
+    order: 2;
   }
-  
+
   .who-we-are-image {
     width: 100%;
-    height: 200px; /* Reduced height for image */
-    order: 1; /* Ensure image comes first */
+    height: auto;
+    order: 1;
+    border-radius: 20px;
   }
-  
+
   .who-we-are-image img {
-    border-radius: 54px 54px 0 0; /* Round top corners only */
-    object-fit: contain; /* Ensure image fits properly */
-    width: 80%; /* Reduce image width */
-    height: auto; /* Maintain aspect ratio */
-    margin: 0 auto; /* Center the image */
-    display: block;
+    width: 60%;
+    border-radius: 20px; /* keep all corners rounded */
+    margin: 0 auto;
   }
 }

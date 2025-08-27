@@ -16,7 +16,7 @@ const WhoWeAre = () => {
 
         {/* Right image */}
         <div className="who-we-are-image">
-          <img src="514568-PIMP17-162-01.png" alt="Who We Are" />
+          <img src="whoweare.png" alt="Who We Are" />
         </div>
       </div>
     </div>
